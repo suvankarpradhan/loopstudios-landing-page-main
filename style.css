@@ -1,0 +1,418 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+h1 {
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+}
+/*****************site-header**************/
+.site-header {
+  background: url("images/desktop/image-hero.jpg") no-repeat rgba(0, 0, 0, 0.4);
+  background-size: cover;
+  background-blend-mode: color-dodge;
+  padding: 5% 11.5% 6%;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.nav-items {
+  display: flex;
+  flex-direction: row;
+  flex: auto;
+  justify-content: flex-end;
+}
+.nav-items > button {
+  margin-left: 4%;
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+  font-size: 1vw;
+  background-color: transparent;
+  color: hsl(0, 0%, 100%);
+  border: none;
+  position: relative;
+}
+
+#icon {
+  display: none;
+  width: 4.6vw;
+}
+.site-header > h1 {
+  margin: 11% 0% 5%;
+  padding: 3%;
+  width: 58%;
+  font-size: 4.5vw;
+  color: hsl(0, 0%, 100%);
+  border: 3px solid hsl(0, 0%, 100%);
+}
+/**************section1**************/
+.section1 {
+  margin: 11.5%;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+.section1 .left-portion {
+  position: relative;
+}
+.section1 .left-portion > img {
+  width: 100%;
+}
+.section1 .right-portion {
+  margin-top: 12%;
+  padding: 7.5% 0% 0% 7.5%;
+  background-color: hsl(0, 0%, 100%);
+  position: absolute;
+  left: 49%;
+  bottom: 0%;
+}
+.section1 .right-portion > h1 {
+  font-size: 3vw;
+  margin-bottom: 3vw;
+  color: hsl(0, 0%, 0%);
+}
+.section1 .right-portion > p {
+  font-size: 1.15vw;
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+  color: hsl(0, 0%, 41%);
+}
+/*****************section2********************/
+.section2 {
+  margin: 0% 11.5% 11.5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  align-items: center;
+  grid-row-gap: 6%;
+}
+
+.section2 > h1 {
+  font-size: 3vw;
+  grid-area: 1/1/2/2;
+}
+.section2 > button {
+  grid-area: 1/2/2/3;
+  width: 10vw;
+  position: absolute;
+  right: 0%;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 0%);
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  border: 2px solid hsl(0, 0%, 0%);
+  letter-spacing: 0.4vw;
+  padding: 1.5% 3%;
+  border-radius: 2px;
+}
+.section2 > button:hover {
+  background-color: hsl(0, 0%, 0%);
+  color: hsl(0, 0%, 100%);
+}
+.card-section {
+  display: grid;
+  grid-area: 2/1/3/3;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 450px);
+  justify-content: space-evenly;
+  grid-gap: 4.2%;
+}
+.card {
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-blend-mode: color-dodge;
+  position: relative;
+}
+.card:hover .card-title {
+  color: hsl(0, 0%, 0%);
+  z-index: 1;
+}
+.card:hover::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(140, 140, 140, 0.6);
+  background-blend-mode: lighten;
+}
+.card1 {
+  background: url("images/desktop/image-deep-earth.jpg") rgba(0, 0, 0, 0.4);
+}
+.card2 {
+  background: url("images/desktop/image-night-arcade.jpg") rgba(0, 0, 0, 0.4);
+}
+.card3 {
+  background: url("images/desktop/image-soccer-team.jpg") rgba(0, 0, 0, 0.4);
+}
+.card4 {
+  background: url("images/desktop/image-grid.jpg") rgba(0, 0, 0, 0.4);
+}
+.card5 {
+  background: url("images/desktop/image-from-above.jpg") rgba(0, 0, 0, 0.4);
+}
+.card6 {
+  background: url("images/desktop/image-pocket-borealis.jpg") rgba(0, 0, 0, 0.4);
+}
+.card7 {
+  background: url("images/desktop/image-curiosity.jpg") rgba(0, 0, 0, 0.4);
+}
+.card8 {
+  background: url("images/desktop/image-fisheye.jpg") rgba(0, 0, 0, 0.4);
+}
+.card-title {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  font-size: 2.2vw;
+  text-align: left;
+  color: hsl(0, 0%, 100%);
+  text-transform: uppercase;
+}
+/*****************footer****************/
+.footer {
+  padding: 4% 11.5% 2%;
+  background-color: hsl(0, 0%, 0%);
+  color: hsl(0, 0%, 100%);
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+  font-size: 1vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 5vh;
+  align-items: center;
+}
+.social-links,
+.foot-items {
+  display: flex;
+  flex-direction: row;
+  flex: auto;
+}
+.social-links {
+  justify-content: flex-end;
+}
+.social-links > li {
+  margin-left: 2.5%;
+  position: relative;
+}
+.foot-items {
+  justify-content: flex-start;
+}
+.foot-items > li {
+  margin-right: 2.5%;
+  position: relative;
+}
+li {
+  list-style: none;
+}
+li:hover,
+button:hover,
+.card:hover {
+  cursor: pointer;
+}
+.copy-right {
+  color: hsl(0, 0%, 41%);
+  display: flex;
+  justify-content: flex-end;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.nav-items > button:hover::after,
+.foot-items > li:hover::after,
+.social-links > li:hover::after {
+  content: "";
+  width: 2vw;
+  height: 0.3vh;
+  position: absolute;
+  left: 0.2vw;
+  bottom: -1vh;
+  background-color: hsl(0, 0%, 100%);
+}
+.social-links > li:hover::after {
+  width: 1.5vw;
+  left: 0.05vw;
+}
+/*****************720p************/
+@media screen and (max-width: 1368px) {
+  .site-header > h1 {
+    font-size: 4.2vw;
+  }
+  .section1 .right-portion {
+    padding: 7% 0% 0% 7%;
+    left: 55%;
+  }
+  .section1 .right-portion > p {
+    font-size: 1vw;
+  }
+  .card-section {
+    grid-gap: 2%;
+  }
+}
+/********************mobile****************/
+@media screen and (max-width: 480px) {
+  .site-header {
+    background: url("images/mobile/image-hero.jpg") no-repeat
+      rgba(68, 48, 48, 0.5);
+    background-size: cover;
+    padding: 11.5% 6%;
+  }
+  .navbar {
+    justify-content: space-between;
+  }
+  .navbar.responsive .nav-items {
+    display: block;
+    position: absolute;
+    width: 88vw;
+    top: 25vh;
+  }
+  .navbar.responsive button {
+    padding: 5% 0%;
+    width: 100%;
+    color: hsl(0, 0%, 100%);
+    font-size: 7.5vw;
+    margin-left: 0%;
+    text-transform: uppercase;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    text-align: left;
+  }
+  .navbar > img {
+    width: 45%;
+  }
+  #icon {
+    display: block;
+  }
+  #icon:hover {
+    transform: scale(1.1);
+  }
+  .nav-items {
+    display: none;
+  }
+  .site-header > h1 {
+    margin: 44% 0%;
+    width: 100%;
+    font-size: 11.5vw;
+  }
+  .section1 {
+    margin: 11.5% 6%;
+    flex-direction: column;
+  }
+  .section1 .right-portion {
+    position: unset;
+    margin: 11.5% 6%;
+    padding: 0%;
+    left: 0%;
+    text-align: center;
+  }
+  .section1 .right-portion > h1 {
+    font-size: 9vw;
+    margin-bottom: 9vw;
+  }
+  .section1 .right-portion > p {
+    font-size: 4.15vw;
+  }
+  .section2 {
+    margin: 6%;
+    grid-template-columns: auto;
+  }
+  .section2 > h1 {
+    font-size: 9vw;
+    text-align: center;
+    grid-area: 1/1/2/2;
+  }
+  .card-section {
+    grid-area: 2/1/3/2;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 32.5vw);
+    justify-content: unset;
+    grid-row-gap: 2%;
+  }
+  .card {
+    background-size: contain !important;
+  }
+  .card1 {
+    background: url("images/mobile/image-deep-earth.jpg") rgba(0, 0, 0, 0.4);
+  }
+  .card2 {
+    background: url("images/mobile/image-night-arcade.jpg") rgba(0, 0, 0, 0.4);
+  }
+  .card3 {
+    background: url("images/mobile/image-soccer-team.jpg") rgba(0, 0, 0, 0.4);
+  }
+  .card4 {
+    background: url("images/mobile/image-grid.jpg") rgba(0, 0, 0, 0.4);
+  }
+  .card5 {
+    background: url("images/mobile/image-from-above.jpg") rgba(0, 0, 0, 0.4);
+  }
+  .card6 {
+    background: url("images/mobile/image-pocket-borealis.jpg")
+      rgba(0, 0, 0, 0.4);
+  }
+  .card7 {
+    background: url("images/mobile/image-curiosity.jpg") rgba(0, 0, 0, 0.4);
+  }
+  .card8 {
+    background: url("images/mobile/image-fisheye.jpg") rgba(0, 0, 0, 0.4);
+  }
+  .card-title {
+    font-size: 6.2vw;
+  }
+  .section2 > button {
+    grid-area: 3/1/4/2;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 65vh;
+    width: 40vw;
+    font-size: 5vw;
+  }
+  .footer {
+    margin-top: 58vh;
+    padding: 11.5% 6%;
+    font-size: 3.6vw;
+    grid-template-columns: 1fr;
+  }
+  .footer > img {
+    grid-area: 1/1/2/2;
+    width: 26vh;
+    justify-self: center;
+  }
+  .foot-items {
+    grid-area: 2/1/3/2;
+    flex-direction: column;
+    align-items: center;
+  }
+  .social-links {
+    grid-area: 3/1/4/2;
+  }
+  .copy-right {
+    grid-area: 4/1/5/2;
+  }
+  .social-links,
+  .copy-right {
+    justify-content: center;
+  }
+  .foot-items > li {
+    margin-bottom: 4.5%;
+    margin-right: 0%;
+  }
+  .nav-items > button:hover::after,
+  .foot-items > li:hover::after,
+  .social-links > li:hover::after {
+    width: 10vw;
+    height: 0.1vh;
+  }
+  .social-links > li:hover::after {
+    width: 7vw;
+  }
+}
